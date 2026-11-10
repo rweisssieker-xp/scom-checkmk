@@ -1,0 +1,20 @@
+name: Funktion vorschlagen
+description: Eine Erweiterung für Service Atlas beschreiben
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Welches Problem soll gelöst werden?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Gewünschtes Verhalten
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Weitere Informationen oder Alternativen
+      description: Bitte keine vertraulichen Daten einfügen.

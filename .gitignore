@@ -1,0 +1,17 @@
+# Lokale Zugangsdaten und Umgebungsdateien
+.env
+.env.*
+!.env.example
+*.local
+*.secret
+*.pem
+*.p12
+*.pfx
+
+# Abhängigkeiten, Logs und temporäre Testdateien
+node_modules/
+coverage/
+*.log
+*.tmp
+.DS_Store
+Thumbs.db

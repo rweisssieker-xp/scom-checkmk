@@ -1,0 +1,33 @@
+name: Fehler melden
+description: Ein reproduzierbares Problem melden
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: Bitte keine Zugangsdaten, internen Hostnamen oder vertraulichen Logs veröffentlichen. Sicherheitslücken bitte entsprechend SECURITY.md vertraulich melden.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Was ist passiert?
+      description: Beschreibe das beobachtete und das erwartete Verhalten.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Schritte zum Nachstellen
+      placeholder: |
+        1. Seite öffnen …
+        2. Aktion ausführen …
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Umgebung
+      description: Betriebssystem, Browser und ggf. Node-, SCOM- und Checkmk-Version.
+  - type: textarea
+    id: context
+    attributes:
+      label: Weitere Informationen
+      description: Nur bereinigte Fehlermeldungen oder Screenshots anhängen.
