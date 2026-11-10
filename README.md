@@ -2,6 +2,10 @@
 
 Service Atlas modelliert Geschäftsservices aus Komponenten und Abhängigkeiten und zeigt deren berechneten Zustand in mehreren Serviceansichten und einer Managementübersicht. Die mitgelieferten Beispiele sind fiktiv. Eine optionale Live-Anbindung an SCOM und Checkmk ist ein bisher nicht gegen reale Instanzen verifizierter Prototyp.
 
+## Produktvideo
+
+Das etwa fünfminütige [Produktvideo ohne Ton](docs/video/service-atlas-ohne-ton.mp4) zeigt das Service-Cockpit, die verschiedenen Servicebaumansichten und einen simulierten Hypervisor-Ausfall bei VOIS/MESO. Die deutschen Untertitel sind eingeblendet und auch als [separate SRT-Datei](docs/video/service-atlas-untertitel.srt) verfügbar. Eine [Version mit Computerstimme](docs/video/service-atlas-mit-ton.mp4) steht ebenfalls bereit. Die im Video gezeigte Architektur ist fiktiv; die Live-Schnittstellen sind noch nicht gegen reale Systeme verifiziert.
+
 ## Schnellstart
 
 Für die Simulation genügt ein moderner Browser. Für die automatisierten Tests und die optionale Live-Bridge wird Node.js 22 oder neuer benötigt. Es müssen keine npm-Pakete installiert werden.

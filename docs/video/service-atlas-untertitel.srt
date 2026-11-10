@@ -1,0 +1,104 @@
+1
+00:00:00,000 --> 00:00:14,600
+Service Atlas verbindet Geschäftsservices und ihre technischen Komponenten in einer gemeinsamen Übersicht.
+Dieses Video zeigt den aktuellen Prototyp anhand simulierter Beispieldaten.
+
+2
+00:00:14,600 --> 00:00:28,400
+Das Service-Cockpit zeigt Geschäftsservices mit ihren Gesamtzuständen. Kritische und unbekannte Zustände
+können priorisiert und für die Serviceleitung sichtbar gemacht werden.
+
+3
+00:00:28,400 --> 00:00:42,300
+Die Übersicht bietet einen Drilldown von einem Geschäftsservice zu Komponenten und ihren Abhängigkeiten.
+Rohzustand und abgeleiteter Zustand werden dabei getrennt dargestellt.
+
+4
+00:00:42,300 --> 00:00:56,100
+Am Beispiel VOIS MESO zeigt die Service-Map den Geschäftsservice und seine technischen Bereiche. Die
+beispielhafte Architektur orientiert sich an Produktnamen der OWL IT.
+
+5
+00:00:56,100 --> 00:01:13,800
+Neben Windows-Anwendungen und Linux-Services umfasst das Beispiel auch Datenbankdienste, Netzwerk,
+Firewall, DNS, Virtualisierung und Storage. Alle gezeigten Systeme sind erfunden.
+
+6
+00:01:13,800 --> 00:01:26,400
+Die Abhängigkeiten bilden technische Ketten ab: Ein Datenbankdienst benötigt seine virtuelle Maschine, diese
+den Hypervisor und darunterliegenden Storage.
+
+7
+00:01:26,400 --> 00:01:38,400
+Fällt eine Pflichtvoraussetzung aus, kann sich der Zustand entlang dieser Kette auf abhängige Komponenten und
+den Geschäftsservice auswirken.
+
+8
+00:01:38,400 --> 00:01:53,600
+Für Bereiche sind Regeln möglich: Pflichtkomponenten, redundante Komponenten mit einer Mindestanzahl
+gesunder Elemente und informative Komponenten ohne Einfluss auf den Gesamtzustand.
+
+9
+00:01:53,600 --> 00:02:08,300
+Der gemeinsame Komponentenkatalog ermöglicht die Wiederverwendung technischer Komponenten in mehreren
+Servicebäumen. So lässt sich beispielsweise ein gemeinsam genutzter Zeitdienst modellieren.
+
+10
+00:02:08,300 --> 00:02:22,200
+Eigene Servicebäume und Komponenten lassen sich anlegen und bearbeiten. Abhängigkeiten und
+Aggregationsregeln werden bewusst modelliert und können später angepasst werden.
+
+11
+00:02:22,200 --> 00:02:35,000
+Das Incident Radar stellt den Servicebaum in einer weiteren Ansicht dar. Für unterschiedliche Aufgaben lassen
+sich verschiedene grafische Perspektiven auswählen.
+
+12
+00:02:35,000 --> 00:02:47,100
+Die Konstellationsansicht zeigt Zusammenhänge aus einer anderen Perspektive. Die Zustände und Komponenten
+stammen dabei aus demselben Datenmodell.
+
+13
+00:02:47,100 --> 00:02:59,100
+Die Schichtenansicht ordnet Komponenten nach ihren Bereichen. Ergänzend stehen eine Listenansicht und ein
+Knotendiagramm zur Verfügung.
+
+14
+00:02:59,100 --> 00:03:12,700
+Service Intelligence erlaubt Was-wäre-wenn-Simulationen. Hier wird der Ausfall des Datenbank-Hypervisors
+untersucht, ohne die gespeicherten Zustände zu verändern.
+
+15
+00:03:12,700 --> 00:03:26,800
+Die Simulation zeigt, welche abhängigen Komponenten betroffen sind und wie sich der Gesamtzustand verändert.
+Die modellierte Abhängigkeit ist jedoch kein Beweis für die Ursache.
+
+16
+00:03:26,800 --> 00:03:41,700
+Die Datenqualität zeigt unter anderem simulierte und zugeordnete Live-Komponenten sowie unbekannte oder
+veraltete Zustände. Dazu kommen lokale Hinweise und Service-Steckbriefe.
+
+17
+00:03:41,700 --> 00:03:56,800
+Die Zeitreise zeigt gespeicherte Momentaufnahmen. Aus den Stichproben lassen sich geschätzte Verfügbarkeit
+und Störungsübergänge ableiten; das ist kein belastbarer SLA-Nachweis.
+
+18
+00:03:56,800 --> 00:04:12,300
+Optional speichert SQLite einen gemeinsamen lokalen Arbeitsbereich und erfasst im Hintergrund
+Momentaufnahmen. Der Dienst muss dafür laufen, und der Arbeitsbereich muss gespeichert sein.
+
+19
+00:04:12,300 --> 00:04:26,200
+Im Cockpit kann zwischen dem lokalen Browserstand und der SQLite-Hintergrundüberwachung umgeschaltet
+werden. Fehlende oder veraltete Live-Daten werden als unbekannt behandelt.
+
+20
+00:04:26,200 --> 00:04:40,700
+SCOM und Checkmk können als Live-Quellen konfiguriert werden. Die Schnittstellen wurden bisher mit
+simulierten Antworten getestet, aber noch nicht gegen reale Instanzen verifiziert.
+
+21
+00:04:40,700 --> 00:04:54,700
+Service Atlas unterstützt damit den Weg von technischen Komponenten zur Geschäftssicht. Für den produktiven
+Einsatz sind weitere Integrations- und Betriebsprüfungen erforderlich.
