@@ -1,0 +1,7 @@
+const test=require('node:test'),assert=require('node:assert/strict');
+const {buildMonitorView}=require('./management-monitor');
+const model=require('./model');
+const tree={id:'t',name:'Service',components:[{id:'app',name:'App',group:'app',state:'ok',dependsOn:['vm']},{id:'vm',name:'VM',group:'vm',state:'ok',liveRef:{source:'SCOM',id:'1'}}]};
+test('Monitoring view uses a matching snapshot without modifying the saved workspace',()=>{const saved={revision:2,data:{trees:[tree]}},sample={workspaceRevision:2,at:Date.now(),components:{t:[{id:'vm',raw:'crit',observedAt:new Date().toISOString()}]}};const result=buildMonitorView(saved,sample);assert.equal(model.treeState(result.trees[0]),'crit');assert.equal(tree.components[1].state,'ok')});
+test('Missing or mismatched snapshot never displays an old live value as healthy',()=>{for(const sample of [null,{workspaceRevision:1,at:Date.now(),components:{t:[]}}]){const result=buildMonitorView({revision:2,data:{trees:[tree]}},sample);assert.equal(model.treeState(result.trees[0]),'unknown')}});
+test('An expired snapshot becomes unknown but simulation stays visible',()=>{const old=new Date(Date.now()-240000).toISOString(),sample={workspaceRevision:2,at:Date.now()-240000,components:{t:[{id:'vm',raw:'ok',observedAt:old}]}};const result=buildMonitorView({revision:2,data:{trees:[tree]}},sample);assert.equal(model.treeState(result.trees[0]),'unknown');assert.equal(result.trees[0].components[0].state,'ok')});

@@ -1,6 +1,8 @@
 # Architektur und Datenmodell
 
-Service Atlas ist ein lokaler Prototyp aus statischen HTML-, CSS- und JavaScript-Dateien. Ein Browser speichert die Bäume im `localStorage`; ein optionaler Node.js-Prozess stellt lesende Zugriffe auf Monitoringquellen bereit. Es gibt derzeit weder einen zentralen Datenspeicher noch Benutzerverwaltung oder eine produktionsreife Mehrbenutzerarchitektur.
+Service Atlas ist ein lokaler Prototyp aus statischen HTML-, CSS- und JavaScript-Dateien. Ein Browser speichert die Bäume im `localStorage`; ein optionaler Node.js-Prozess stellt lesende Zugriffe auf Monitoringquellen bereit. Es gibt derzeit keinen zentralen Mehrbenutzerspeicher, keine Benutzerverwaltung und keine produktionsreife Mehrbenutzerarchitektur.
+
+Optional steht ein lokaler SQLite-Arbeitsbereich auf demselben Rechner zur Verfügung. Die Übertragung aus dem Browser erfolgt explizit über den Speicherdialog; dies ist noch keine automatische Synchronisation und kein Netzwerkdienst für mehrere Benutzer. Ein Revisionsvergleich verhindert, dass ein veralteter Speicherstand den aktuellen Stand unbemerkt überschreibt.
 
 ```mermaid
 flowchart LR
@@ -21,6 +23,7 @@ flowchart LR
 | `catalog.js` | Gemeinsame Komponenten und deren Stammdaten |
 | `bridge.js` | Übersetzung und Zuordnung simulierter Zustände |
 | `live-ui.js`, `live-server.js`, `live-adapters.js` | Live-Auswahl, lokaler Vermittler und Quelladapter |
+| `workspace-ui.js`, `workspace-server.js`, `workspace-store.js` | Expliziter Abgleich mit lokalem SQLite-Arbeitsbereich und Versionen |
 | `scom-rest-read.ps1`, `scom-read.ps1` | SCOM-REST-Zugriff bzw. Zugriff über OperationsManager-Modul |
 | `owl-examples.js` | Fiktive, an Produktnamen orientierte Beispiele |
 

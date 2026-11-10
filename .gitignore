@@ -7,6 +7,9 @@
 *.pem
 *.p12
 *.pfx
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
 
 # Abhängigkeiten, Logs und temporäre Testdateien
 node_modules/
