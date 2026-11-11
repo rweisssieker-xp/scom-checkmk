@@ -1,0 +1,226 @@
+- generic [ref=f5e2]:
+  - complementary [ref=f5e3]:
+    - generic [ref=f5e4]:
+      - generic [ref=f5e5]: ⌘
+      - generic [ref=f5e6]: serviceatlas
+    - generic [ref=f5e7]: ÜBERSICHT
+    - navigation "Ansichten" [ref=f5e8]:
+      - link "◉ Gesamtübersicht" [ref=f5e9] [cursor=pointer]:
+        - /url: management.html
+        - text: ◉
+        - generic [ref=f5e10]: Gesamtübersicht
+      - link "◉ Service Intelligence" [ref=f5e11] [cursor=pointer]:
+        - /url: insights.html
+        - text: ◉
+        - generic [ref=f5e12]: Service Intelligence
+      - link "◉ Service-Map" [ref=f5e13] [cursor=pointer]:
+        - /url: service-map.html
+        - text: ◉
+        - generic [ref=f5e14]: Service-Map
+      - link "◉ Incident Radar" [ref=f5e15] [cursor=pointer]:
+        - /url: incident-radar.html
+        - text: ◉
+        - generic [ref=f5e16]: Incident Radar
+      - link "◉ Konstellation" [ref=f5e17] [cursor=pointer]:
+        - /url: service-konstellation.html
+        - text: ◉
+        - generic [ref=f5e18]: Konstellation
+      - link "◉ Schichtenansicht" [ref=f5e19] [cursor=pointer]:
+        - /url: schichtenansicht.html
+        - text: ◉
+        - generic [ref=f5e20]: Schichtenansicht
+    - generic [ref=f5e23]:
+      - strong [ref=f5e24]: Lokaler Prototyp
+      - generic [ref=f5e25]: Simulation & Beobachtung
+  - main [ref=f5e26]:
+    - generic [ref=f5e27]:
+      - generic [ref=f5e28]:
+        - text: Service Monitoring /
+        - strong [ref=f5e29]: Service Intelligence
+      - generic [ref=f5e30]: SERVICE ATLAS
+    - generic [ref=f5e31]:
+      - generic [ref=f5e32]:
+        - generic [ref=f5e33]:
+          - heading "Service Intelligence" [level=1] [ref=f5e34]
+          - paragraph [ref=f5e35]: Auswirkungen verstehen, Szenarien prüfen und Services gezielt steuern.
+        - link "← Zum Service-Cockpit" [ref=f5e36] [cursor=pointer]:
+          - /url: management.html
+      - generic [ref=f5e37]:
+        - generic [ref=f5e38]: ⓘ
+        - generic [ref=f5e39]:
+          - strong [ref=f5e40]: Lokaler Prototyp.
+          - text: Keine externen Benachrichtigungen und kein belastbarer SLA-Nachweis. SQLite-Aufnahmen sind lokal verfügbar. Testdaten sind ausdrücklich gekennzeichnet.
+      - generic [ref=f5e41]:
+        - generic [ref=f5e42]:
+          - text: Geschäftsservice
+          - combobox "Geschäftsservice" [ref=f5e43]:
+            - option "Kundenportal"
+            - option "Einwohnerwesen – VOIS/MESO (Beispiel)" [selected]
+            - option "Personalmanagement – P&I LogaHR (Beispiel)"
+            - option "Finanzservices – Infoma newsystem (Beispiel)"
+            - option "Dokumentenmanagement – d.velop documents (Beispiel)"
+        - navigation "Analysebereiche" [ref=f5e44]:
+          - link "Szenario" [ref=f5e45] [cursor=pointer]:
+            - /url: "#scenario"
+          - link "Datenqualität" [ref=f5e46] [cursor=pointer]:
+            - /url: "#quality"
+          - link "Steckbrief" [ref=f5e47] [cursor=pointer]:
+            - /url: "#profile"
+          - link "Verlauf & SLA" [ref=f5e48] [cursor=pointer]:
+            - /url: "#history"
+          - link "Vorschläge" [ref=f5e49] [cursor=pointer]:
+            - /url: "#suggestions"
+          - link "Meldungen" [ref=f5e50] [cursor=pointer]:
+            - /url: "#alerts"
+      - generic [ref=f5e51]:
+        - article [ref=f5e52]:
+          - generic [ref=f5e53]:
+            - generic [ref=f5e54]:
+              - text: 01 · AUSWIRKUNG & SIMULATION
+              - heading "Was passiert bei einem Ausfall?" [level=2] [ref=f5e55]
+              - paragraph [ref=f5e56]: Eine oder mehrere Komponenten probeweise verändern – ohne den gespeicherten Zustand zu ändern.
+            - generic [ref=f5e57]: WAS-WÄRE-WENN
+          - generic [ref=f5e58]:
+            - generic [ref=f5e59]:
+              - text: Komponenten
+              - listbox "Komponenten" [ref=f5e60]:
+                - option "VOIS/MESO – Webzugriff · demo-meso-web" [ref=f5e61]
+                - option "Windows-Anwendungsserver · demo-meso-win-01" [ref=f5e62]
+                - option "Linux-Service 01 · demo-meso-linux-01" [ref=f5e63]
+                - option "Linux-Service 02 · demo-meso-linux-02" [ref=f5e64]
+                - option "Datenbankdienst · demo-meso-db" [ref=f5e65]
+                - option "DNS-Auflösung · demo-meso-dns" [ref=f5e66]
+                - option "Firewall · demo-meso-firewall" [ref=f5e67]
+                - option "Netzwerk-Switch · demo-meso-switch" [ref=f5e68]
+                - option "Netzwerkverbindung · demo-meso-verbindung" [ref=f5e69]
+                - option "Datenbankserver (VM) · demo-meso-db-vm" [ref=f5e70]
+                - option "Virtualisierungshost Datenbank · demo-meso-hypervisor" [selected] [ref=f5e71]
+                - option "Storage für Datenbank · demo-meso-storage" [ref=f5e72]
+                - option "Datenbank-Backup · demo-meso-backup" [ref=f5e73]
+                - option "Verzeichnisdienst / Anmeldung · demo-meso-auth" [ref=f5e74]
+                - option "Reverse-Proxy / Lastausgleich · demo-meso-proxy" [ref=f5e75]
+                - option "TLS-Zertifikat · demo-meso-tls" [ref=f5e76]
+                - option "Gemeinsamer Zeitdienst · demo-owl-shared-ntp" [ref=f5e77]
+            - generic [ref=f5e78]:
+              - text: Simulierter Zustand
+              - combobox "Simulierter Zustand" [ref=f5e79]:
+                - option "CRIT · Ausfall" [selected]
+                - option "WARN · Warnung"
+                - option "UNKNOWN"
+                - option "OK · Wiederherstellung"
+            - button "Szenario berechnen" [ref=f5e80] [cursor=pointer]
+          - generic [ref=f5e81]:
+            - generic [ref=f5e82]:
+              - strong [ref=f5e83]: "Simulation:"
+              - text: VOIS/MESO – Webzugriff → CRIT. Gespeicherte Zustände bleiben unverändert.
+            - generic [ref=f5e84]:
+              - generic [ref=f5e85]:
+                - strong [ref=f5e86]: Einwohnerwesen – VOIS/MESO (Beispiel)
+                - generic [ref=f5e87]: 1 Komponenten ändern ihren abgeleiteten Zustand
+              - generic [ref=f5e88]:
+                - generic [ref=f5e89]: OK
+                - text: →
+                - generic [ref=f5e90]: CRIT
+        - article [ref=f5e91]:
+          - text: 02 · VERTRAUEN
+          - heading "Datenqualität" [level=2] [ref=f5e92]
+          - paragraph [ref=f5e93]: Aktualität und Zuordnung der Komponenten im ausgewählten Service.
+          - generic [ref=f5e94]:
+            - generic [ref=f5e95]:
+              - generic [ref=f5e96]: Simulierte Komponenten
+              - strong [ref=f5e97]: "17"
+            - generic [ref=f5e98]:
+              - generic [ref=f5e99]: Live-Komponenten
+              - strong [ref=f5e100]: "0"
+            - generic [ref=f5e101]:
+              - generic [ref=f5e102]: Veraltete / fehlende Live-Abfragen
+              - strong [ref=f5e103]: "0"
+            - generic [ref=f5e104]:
+              - generic [ref=f5e105]: Unbekannter Quellzustand
+              - strong [ref=f5e106]: "0"
+            - generic [ref=f5e107]:
+              - generic [ref=f5e108]: Fehlende Katalog- oder Quellenangabe
+              - strong [ref=f5e109]: "0"
+            - paragraph [ref=f5e110]: Die Aktualität betrifft die Bridge-Abfrage, nicht den Zeitpunkt des letzten Quellchecks.
+        - article [ref=f5e111]:
+          - text: 03 · MELDUNGEN
+          - heading "Geschäftsauswirkungen" [level=2] [ref=f5e112]
+          - paragraph [ref=f5e113]: Lokale Hinweise zu betroffenen Services; keine E-Mail oder externen Alarme.
+          - paragraph [ref=f5e115]: Keine aktiven lokalen Hinweise.
+          - generic [ref=f5e116]:
+            - checkbox "Hinweise für diesen Service anzeigen" [checked] [ref=f5e117]
+            - text: Hinweise für diesen Service anzeigen
+        - article [ref=f5e118]:
+          - text: 04 · SERVICE-STECKBRIEF
+          - heading "Verantwortung & Kontext" [level=2] [ref=f5e119]
+          - paragraph [ref=f5e120]: Angaben werden lokal im Browser gespeichert.
+          - generic [ref=f5e121]:
+            - generic [ref=f5e122]:
+              - text: Zweck
+              - textbox "Zweck" [ref=f5e123]
+            - generic [ref=f5e124]:
+              - text: Betreuendes Team
+              - textbox "Betreuendes Team" [ref=f5e125]
+            - generic [ref=f5e126]:
+              - text: Kontakt
+              - textbox "Kontakt" [ref=f5e127]
+            - generic [ref=f5e128]:
+              - text: Betriebszeiten
+              - textbox "Betriebszeiten" [ref=f5e129]
+            - generic [ref=f5e130]:
+              - text: Kritikalität
+              - combobox "Kritikalität" [ref=f5e131]:
+                - option "Nicht festgelegt" [selected]
+                - option "Hoch"
+                - option "Mittel"
+                - option "Niedrig"
+            - generic [ref=f5e132]:
+              - text: SLA-Ziel in %
+              - spinbutton "SLA-Ziel in %" [ref=f5e133]
+            - generic [ref=f5e134]:
+              - text: Runbook-URL
+              - textbox "Runbook-URL" [ref=f5e135]:
+                - /placeholder: https://…
+            - button "Steckbrief speichern" [ref=f5e136] [cursor=pointer]
+        - article [ref=f5e137]:
+          - generic [ref=f5e138]:
+            - generic [ref=f5e139]:
+              - text: 05 · VERLAUF, SLA & MUSTER
+              - heading "Verlauf und Zeitreise" [level=2] [ref=f5e140]
+              - paragraph [ref=f5e141]: Browseraufnahmen entstehen bei geöffnetem Analyse-Cockpit; SQLite-Aufnahmen beim laufenden lokalen Dienst.
+            - button "Jetzt aufnehmen" [ref=f5e142] [cursor=pointer]
+          - generic [ref=f5e143]:
+            - generic [ref=f5e144]:
+              - text: Datenbasis
+              - combobox "Datenbasis" [ref=f5e145]:
+                - option "Lokale Beobachtungen" [selected]
+                - option "SQLite-Hintergrundaufnahmen"
+                - option "Fiktiver Demo-Verlauf"
+            - button "Demo-Verlauf erzeugen" [ref=f5e146] [cursor=pointer]
+            - generic [ref=f5e147]:
+              - text: Zeitpunkt
+              - combobox "Zeitpunkt" [ref=f5e148]
+          - paragraph [ref=f5e149]: SQLite-Aufnahmen beziehen sich auf den gespeicherten Arbeitsbereich; simulierte Komponenten bleiben Simulation.
+          - paragraph [ref=f5e151]: Noch keine Aufnahme in dieser Datenbasis vorhanden.
+          - generic [ref=f5e152]:
+            - generic [ref=f5e153]:
+              - heading "Beobachtete Verfügbarkeit" [level=3] [ref=f5e154]
+              - generic [ref=f5e156]:
+                - strong [ref=f5e157]: Nicht berechenbar
+                - text: · Abdeckung 0.0 %
+                - paragraph [ref=f5e158]:
+                  - strong [ref=f5e159]: "Zeitraum:"
+                  - text: Keine Aufnahmen · 0 Aufnahmen
+                - paragraph [ref=f5e160]: "Verfügbar: 0 h 0 min 0 s · Ausfall: 0 h 0 min 0 s · Unbekannt / Datenlücke: 0 h 0 min 0 s"
+                - paragraph [ref=f5e161]: Kein Ziel hinterlegt. OK und WARN zählen als verfügbar, CRIT als Ausfall. UNKNOWN und Lücken über fünf Minuten sind nicht bewertet. Dies ist eine Stichproben-Schätzung, kein SLA-Nachweis; Wartungszeiten werden nicht berücksichtigt.
+            - generic [ref=f5e162]:
+              - heading "Wiederkehrende Störungen" [level=3] [ref=f5e163]
+              - generic [ref=f5e165]:
+                - strong [ref=f5e166]: "0"
+                - text: Übergänge in WARN/CRIT erkannt
+                - paragraph [ref=f5e167]: Nur in der gewählten Datenbasis und bei bekannten Aufnahmen mit höchstens fünf Minuten Abstand. Kein Nachweis einer Ursache.
+        - article [ref=f5e168]:
+          - text: 06 · MODELLIERUNG
+          - heading "Abhängigkeiten vorschlagen" [level=2] [ref=f5e169]
+          - paragraph [ref=f5e170]: Gleiche Hostnamen liefern Hinweise, aber keinen Beweis für eine Abhängigkeit. Jede Richtung muss ausdrücklich bestätigt werden.
+          - paragraph [ref=f5e172]: Keine Vorschläge auf Basis gleicher Hostnamen gefunden.

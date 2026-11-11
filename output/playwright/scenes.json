@@ -1,0 +1,86 @@
+[
+  [
+    "cockpit",
+    "Service Atlas verbindet Geschäftsservices und ihre technischen Komponenten in einer gemeinsamen Übersicht. Dieses Video zeigt den aktuellen Prototyp anhand simulierter Beispieldaten."
+  ],
+  [
+    "cockpit",
+    "Das Service-Cockpit zeigt Geschäftsservices mit ihren Gesamtzuständen. Kritische und unbekannte Zustände können priorisiert und für die Serviceleitung sichtbar gemacht werden."
+  ],
+  [
+    "cockpit",
+    "Die Übersicht bietet einen Drilldown von einem Geschäftsservice zu Komponenten und ihren Abhängigkeiten. Rohzustand und abgeleiteter Zustand werden dabei getrennt dargestellt."
+  ],
+  [
+    "map",
+    "Am Beispiel VOIS MESO zeigt die Service-Map den Geschäftsservice und seine technischen Bereiche. Die beispielhafte Architektur orientiert sich an Produktnamen der OWL IT."
+  ],
+  [
+    "map",
+    "Neben Windows-Anwendungen und Linux-Services umfasst das Beispiel auch Datenbankdienste, Netzwerk, Firewall, DNS, Virtualisierung und Storage. Alle gezeigten Systeme sind erfunden."
+  ],
+  [
+    "map",
+    "Die Abhängigkeiten bilden technische Ketten ab: Ein Datenbankdienst benötigt seine virtuelle Maschine, diese den Hypervisor und darunterliegenden Storage."
+  ],
+  [
+    "map",
+    "Fällt eine Pflichtvoraussetzung aus, kann sich der Zustand entlang dieser Kette auf abhängige Komponenten und den Geschäftsservice auswirken."
+  ],
+  [
+    "map",
+    "Für Bereiche sind Regeln möglich: Pflichtkomponenten, redundante Komponenten mit einer Mindestanzahl gesunder Elemente und informative Komponenten ohne Einfluss auf den Gesamtzustand."
+  ],
+  [
+    "catalog",
+    "Der gemeinsame Komponentenkatalog ermöglicht die Wiederverwendung technischer Komponenten in mehreren Servicebäumen. So lässt sich beispielsweise ein gemeinsam genutzter Zeitdienst modellieren."
+  ],
+  [
+    "catalog",
+    "Eigene Servicebäume und Komponenten lassen sich anlegen und bearbeiten. Abhängigkeiten und Aggregationsregeln werden bewusst modelliert und können später angepasst werden."
+  ],
+  [
+    "radar",
+    "Das Incident Radar stellt den Servicebaum in einer weiteren Ansicht dar. Für unterschiedliche Aufgaben lassen sich verschiedene grafische Perspektiven auswählen."
+  ],
+  [
+    "constellation",
+    "Die Konstellationsansicht zeigt Zusammenhänge aus einer anderen Perspektive. Die Zustände und Komponenten stammen dabei aus demselben Datenmodell."
+  ],
+  [
+    "layers",
+    "Die Schichtenansicht ordnet Komponenten nach ihren Bereichen. Ergänzend stehen eine Listenansicht und ein Knotendiagramm zur Verfügung."
+  ],
+  [
+    "simulation",
+    "Service Intelligence erlaubt Was-wäre-wenn-Simulationen. Hier wird der Ausfall des Datenbank-Hypervisors untersucht, ohne die gespeicherten Zustände zu verändern."
+  ],
+  [
+    "simulation",
+    "Die Simulation zeigt, welche abhängigen Komponenten betroffen sind und wie sich der Gesamtzustand verändert. Die modellierte Abhängigkeit ist jedoch kein Beweis für die Ursache."
+  ],
+  [
+    "intelligence",
+    "Die Datenqualität zeigt unter anderem simulierte und zugeordnete Live-Komponenten sowie unbekannte oder veraltete Zustände. Dazu kommen lokale Hinweise und Service-Steckbriefe."
+  ],
+  [
+    "history",
+    "Die Zeitreise zeigt gespeicherte Momentaufnahmen. Aus den Stichproben lassen sich geschätzte Verfügbarkeit und Störungsübergänge ableiten; das ist kein belastbarer SLA-Nachweis."
+  ],
+  [
+    "history",
+    "Optional speichert SQLite einen gemeinsamen lokalen Arbeitsbereich und erfasst im Hintergrund Momentaufnahmen. Der Dienst muss dafür laufen, und der Arbeitsbereich muss gespeichert sein."
+  ],
+  [
+    "cockpit",
+    "Im Cockpit kann zwischen dem lokalen Browserstand und der SQLite-Hintergrundüberwachung umgeschaltet werden. Fehlende oder veraltete Live-Daten werden als unbekannt behandelt."
+  ],
+  [
+    "map",
+    "SCOM und Checkmk können als Live-Quellen konfiguriert werden. Die Schnittstellen wurden bisher mit simulierten Antworten getestet, aber noch nicht gegen reale Instanzen verifiziert."
+  ],
+  [
+    "cockpit",
+    "Service Atlas unterstützt damit den Weg von technischen Komponenten zur Geschäftssicht. Für den produktiven Einsatz sind weitere Integrations- und Betriebsprüfungen erforderlich."
+  ]
+]

@@ -1,0 +1,325 @@
+- generic [ref=f5e2]:
+  - complementary [ref=f5e3]:
+    - generic [ref=f5e4]:
+      - generic [ref=f5e5]: ⌘
+      - generic [ref=f5e6]: serviceatlas
+    - generic [ref=f5e7]: ÜBERSICHT
+    - navigation "Ansichten" [ref=f5e8]:
+      - link "◉ Gesamtübersicht" [ref=f5e9] [cursor=pointer]:
+        - /url: management.html
+        - text: ◉
+        - generic [ref=f5e10]: Gesamtübersicht
+      - link "◉ Service Intelligence" [ref=f5e11] [cursor=pointer]:
+        - /url: insights.html
+        - text: ◉
+        - generic [ref=f5e12]: Service Intelligence
+      - link "◉ Service-Map" [ref=f5e13] [cursor=pointer]:
+        - /url: service-map.html
+        - text: ◉
+        - generic [ref=f5e14]: Service-Map
+      - link "◉ Incident Radar" [ref=f5e15] [cursor=pointer]:
+        - /url: incident-radar.html
+        - text: ◉
+        - generic [ref=f5e16]: Incident Radar
+      - link "◉ Konstellation" [ref=f5e17] [cursor=pointer]:
+        - /url: service-konstellation.html
+        - text: ◉
+        - generic [ref=f5e18]: Konstellation
+      - link "◉ Schichtenansicht" [ref=f5e19] [cursor=pointer]:
+        - /url: schichtenansicht.html
+        - text: ◉
+        - generic [ref=f5e20]: Schichtenansicht
+    - generic [ref=f5e23]:
+      - strong [ref=f5e24]: Lokaler Prototyp
+      - generic [ref=f5e25]: Simulation & Beobachtung
+  - main [ref=f5e26]:
+    - generic [ref=f5e27]:
+      - generic [ref=f5e28]:
+        - text: Service Monitoring /
+        - strong [ref=f5e29]: Service Intelligence
+      - generic [ref=f5e30]: SERVICE ATLAS
+    - generic [ref=f5e31]:
+      - generic [ref=f5e32]:
+        - generic [ref=f5e33]:
+          - heading "Service Intelligence" [level=1] [ref=f5e34]
+          - paragraph [ref=f5e35]: Auswirkungen verstehen, Szenarien prüfen und Services gezielt steuern.
+        - link "← Zum Service-Cockpit" [ref=f5e36] [cursor=pointer]:
+          - /url: management.html
+      - generic [ref=f5e37]:
+        - generic [ref=f5e38]: ⓘ
+        - generic [ref=f5e39]:
+          - strong [ref=f5e40]: Lokaler Prototyp.
+          - text: Keine externen Benachrichtigungen und kein belastbarer SLA-Nachweis. SQLite-Aufnahmen sind lokal verfügbar. Testdaten sind ausdrücklich gekennzeichnet.
+      - generic [ref=f5e41]:
+        - generic [ref=f5e42]:
+          - text: Geschäftsservice
+          - combobox "Geschäftsservice" [ref=f5e43]:
+            - option "Kundenportal"
+            - option "Einwohnerwesen – VOIS/MESO (Beispiel)" [selected]
+            - option "Personalmanagement – P&I LogaHR (Beispiel)"
+            - option "Finanzservices – Infoma newsystem (Beispiel)"
+            - option "Dokumentenmanagement – d.velop documents (Beispiel)"
+        - navigation "Analysebereiche" [ref=f5e44]:
+          - link "Szenario" [ref=f5e45] [cursor=pointer]:
+            - /url: "#scenario"
+          - link "Datenqualität" [ref=f5e46] [cursor=pointer]:
+            - /url: "#quality"
+          - link "Steckbrief" [ref=f5e47] [cursor=pointer]:
+            - /url: "#profile"
+          - link "Verlauf & SLA" [ref=f5e48] [cursor=pointer]:
+            - /url: "#history"
+          - link "Vorschläge" [ref=f5e49] [cursor=pointer]:
+            - /url: "#suggestions"
+          - link "Meldungen" [ref=f5e50] [cursor=pointer]:
+            - /url: "#alerts"
+      - generic [ref=f5e51]:
+        - article [ref=f5e52]:
+          - generic [ref=f5e53]:
+            - generic [ref=f5e54]:
+              - text: 01 · AUSWIRKUNG & SIMULATION
+              - heading "Was passiert bei einem Ausfall?" [level=2] [ref=f5e55]
+              - paragraph [ref=f5e56]: Eine oder mehrere Komponenten probeweise verändern – ohne den gespeicherten Zustand zu ändern.
+            - generic [ref=f5e57]: WAS-WÄRE-WENN
+          - generic [ref=f5e58]:
+            - generic [ref=f5e59]:
+              - text: Komponenten
+              - listbox "Komponenten" [ref=f5e60]:
+                - option "VOIS/MESO – Webzugriff · demo-meso-web" [ref=f5e173]
+                - option "Windows-Anwendungsserver · demo-meso-win-01" [ref=f5e174]
+                - option "Linux-Service 01 · demo-meso-linux-01" [ref=f5e175]
+                - option "Linux-Service 02 · demo-meso-linux-02" [ref=f5e176]
+                - option "Datenbankdienst · demo-meso-db" [ref=f5e177]
+                - option "DNS-Auflösung · demo-meso-dns" [ref=f5e178]
+                - option "Firewall · demo-meso-firewall" [ref=f5e179]
+                - option "Netzwerk-Switch · demo-meso-switch" [ref=f5e180]
+                - option "Netzwerkverbindung · demo-meso-verbindung" [ref=f5e181]
+                - option "Datenbankserver (VM) · demo-meso-db-vm" [ref=f5e182]
+                - option "Virtualisierungshost Datenbank · demo-meso-hypervisor" [selected] [ref=f5e183]
+                - option "Storage für Datenbank · demo-meso-storage" [ref=f5e184]
+                - option "Datenbank-Backup · demo-meso-backup" [ref=f5e185]
+                - option "Verzeichnisdienst / Anmeldung · demo-meso-auth" [ref=f5e186]
+                - option "Reverse-Proxy / Lastausgleich · demo-meso-proxy" [ref=f5e187]
+                - option "TLS-Zertifikat · demo-meso-tls" [ref=f5e188]
+                - option "Gemeinsamer Zeitdienst · demo-owl-shared-ntp" [ref=f5e189]
+            - generic [ref=f5e78]:
+              - text: Simulierter Zustand
+              - combobox "Simulierter Zustand" [ref=f5e79]:
+                - option "CRIT · Ausfall" [selected]
+                - option "WARN · Warnung"
+                - option "UNKNOWN"
+                - option "OK · Wiederherstellung"
+            - button "Szenario berechnen" [ref=f5e80] [cursor=pointer]
+          - generic [ref=f5e81]:
+            - generic [ref=f5e190]:
+              - strong [ref=f5e191]: "Simulation:"
+              - text: Virtualisierungshost Datenbank → CRIT. Gespeicherte Zustände bleiben unverändert.
+            - generic [ref=f5e192]:
+              - generic [ref=f5e193]:
+                - strong [ref=f5e194]: Einwohnerwesen – VOIS/MESO (Beispiel)
+                - generic [ref=f5e195]: 3 Komponenten ändern ihren abgeleiteten Zustand · Erklärungen unten
+              - generic [ref=f5e196]:
+                - generic [ref=f5e197]: OK
+                - text: →
+                - generic [ref=f5e198]: CRIT
+            - generic [ref=f5e199]:
+              - generic [ref=f5e200]: Datenbankdienst (CRIT)
+              - generic [ref=f5e201]: "hat auffällige Pflichtvoraussetzungen:"
+              - generic [ref=f5e202]: Datenbankserver (VM) (CRIT)
+              - generic [ref=f5e203]: Virtualisierungshost Datenbank (CRIT)
+            - generic [ref=f5e204]:
+              - generic [ref=f5e205]: Datenbankserver (VM) (CRIT)
+              - generic [ref=f5e206]: "hat auffällige Pflichtvoraussetzungen:"
+              - generic [ref=f5e207]: Virtualisierungshost Datenbank (CRIT)
+        - article [ref=f5e91]:
+          - text: 02 · VERTRAUEN
+          - heading "Datenqualität" [level=2] [ref=f5e92]
+          - paragraph [ref=f5e93]: Aktualität und Zuordnung der Komponenten im ausgewählten Service.
+          - generic [ref=f5e94]:
+            - generic [ref=f5e208]:
+              - generic [ref=f5e209]: Simulierte Komponenten
+              - strong [ref=f5e210]: "17"
+            - generic [ref=f5e211]:
+              - generic [ref=f5e212]: Live-Komponenten
+              - strong [ref=f5e213]: "0"
+            - generic [ref=f5e214]:
+              - generic [ref=f5e215]: Veraltete / fehlende Live-Abfragen
+              - strong [ref=f5e216]: "0"
+            - generic [ref=f5e217]:
+              - generic [ref=f5e218]: Unbekannter Quellzustand
+              - strong [ref=f5e219]: "0"
+            - generic [ref=f5e220]:
+              - generic [ref=f5e221]: Fehlende Katalog- oder Quellenangabe
+              - strong [ref=f5e222]: "0"
+            - paragraph [ref=f5e223]: Die Aktualität betrifft die Bridge-Abfrage, nicht den Zeitpunkt des letzten Quellchecks.
+        - article [ref=f5e111]:
+          - text: 03 · MELDUNGEN
+          - heading "Geschäftsauswirkungen" [level=2] [ref=f5e112]
+          - paragraph [ref=f5e113]: Lokale Hinweise zu betroffenen Services; keine E-Mail oder externen Alarme.
+          - paragraph [ref=f5e224]: Keine aktiven lokalen Hinweise.
+          - generic [ref=f5e116]:
+            - checkbox "Hinweise für diesen Service anzeigen" [checked] [ref=f5e117]
+            - text: Hinweise für diesen Service anzeigen
+        - article [ref=f5e118]:
+          - text: 04 · SERVICE-STECKBRIEF
+          - heading "Verantwortung & Kontext" [level=2] [ref=f5e119]
+          - paragraph [ref=f5e120]: Angaben werden lokal im Browser gespeichert.
+          - generic [ref=f5e121]:
+            - generic [ref=f5e122]:
+              - text: Zweck
+              - textbox "Zweck" [ref=f5e123]
+            - generic [ref=f5e124]:
+              - text: Betreuendes Team
+              - textbox "Betreuendes Team" [ref=f5e125]
+            - generic [ref=f5e126]:
+              - text: Kontakt
+              - textbox "Kontakt" [ref=f5e127]
+            - generic [ref=f5e128]:
+              - text: Betriebszeiten
+              - textbox "Betriebszeiten" [ref=f5e129]
+            - generic [ref=f5e130]:
+              - text: Kritikalität
+              - combobox "Kritikalität" [ref=f5e131]:
+                - option "Nicht festgelegt" [selected]
+                - option "Hoch"
+                - option "Mittel"
+                - option "Niedrig"
+            - generic [ref=f5e132]:
+              - text: SLA-Ziel in %
+              - spinbutton "SLA-Ziel in %" [ref=f5e133]
+            - generic [ref=f5e134]:
+              - text: Runbook-URL
+              - textbox "Runbook-URL" [ref=f5e135]:
+                - /placeholder: https://…
+            - button "Steckbrief speichern" [ref=f5e136] [cursor=pointer]
+        - article [ref=f5e137]:
+          - generic [ref=f5e138]:
+            - generic [ref=f5e139]:
+              - text: 05 · VERLAUF, SLA & MUSTER
+              - heading "Verlauf und Zeitreise" [level=2] [ref=f5e140]
+              - paragraph [ref=f5e141]: Browseraufnahmen entstehen bei geöffnetem Analyse-Cockpit; SQLite-Aufnahmen beim laufenden lokalen Dienst.
+            - button "Jetzt aufnehmen" [ref=f5e142] [cursor=pointer]
+          - generic [ref=f5e143]:
+            - generic [ref=f5e144]:
+              - text: Datenbasis
+              - combobox "Datenbasis" [ref=f5e145]:
+                - option "Lokale Beobachtungen" [selected]
+                - option "SQLite-Hintergrundaufnahmen"
+                - option "Fiktiver Demo-Verlauf"
+            - button "Demo-Verlauf erzeugen" [ref=f5e146] [cursor=pointer]
+            - generic [ref=f5e147]:
+              - text: Zeitpunkt
+              - combobox "Zeitpunkt" [ref=f5e148]:
+                - option "10.11.2026, 13:22:20 · OK" [selected]
+          - paragraph [ref=f5e149]: SQLite-Aufnahmen beziehen sich auf den gespeicherten Arbeitsbereich; simulierte Komponenten bleiben Simulation.
+          - generic [ref=f5e225]:
+            - strong [ref=f5e226]: Lokale Aufnahme · 10.11.2026, 13:22:20
+            - text: · Servicezustand OK
+            - paragraph [ref=f5e227]: Die gespeicherte Momentaufnahme zeigt 17 Komponenten. Zustand und Modell gelten für diesen Aufnahmezeitpunkt.
+            - generic [ref=f5e228]:
+              - generic [ref=f5e229]:
+                - generic [ref=f5e230]:
+                  - strong [ref=f5e231]: VOIS/MESO – Webzugriff
+                  - generic [ref=f5e232]: Webzugriff · SCOM · Quelle OK
+                - generic [ref=f5e233]: OK
+              - generic [ref=f5e234]:
+                - generic [ref=f5e235]:
+                  - strong [ref=f5e236]: Windows-Anwendungsserver
+                  - generic [ref=f5e237]: Webzugriff · SCOM · Quelle OK
+                - generic [ref=f5e238]: OK
+              - generic [ref=f5e239]:
+                - generic [ref=f5e240]:
+                  - strong [ref=f5e241]: Linux-Service 01
+                  - generic [ref=f5e242]: Anwendungsdienste · Checkmk · Quelle OK
+                - generic [ref=f5e243]: OK
+              - generic [ref=f5e244]:
+                - generic [ref=f5e245]:
+                  - strong [ref=f5e246]: Linux-Service 02
+                  - generic [ref=f5e247]: Anwendungsdienste · Checkmk · Quelle OK
+                - generic [ref=f5e248]: OK
+              - generic [ref=f5e249]:
+                - generic [ref=f5e250]:
+                  - strong [ref=f5e251]: Datenbankdienst
+                  - generic [ref=f5e252]: Datenbank · SCOM · Quelle OK · benötigt Datenbankserver (VM) (Pflicht)
+                - generic [ref=f5e253]: OK
+              - generic [ref=f5e254]:
+                - generic [ref=f5e255]:
+                  - strong [ref=f5e256]: DNS-Auflösung
+                  - generic [ref=f5e257]: Netzwerk · Checkmk · Quelle OK
+                - generic [ref=f5e258]: OK
+              - generic [ref=f5e259]:
+                - generic [ref=f5e260]:
+                  - strong [ref=f5e261]: Firewall
+                  - generic [ref=f5e262]: Netzwerk · Checkmk · Quelle OK
+                - generic [ref=f5e263]: OK
+              - generic [ref=f5e264]:
+                - generic [ref=f5e265]:
+                  - strong [ref=f5e266]: Netzwerk-Switch
+                  - generic [ref=f5e267]: Netzwerk · Checkmk · Quelle OK
+                - generic [ref=f5e268]: OK
+              - generic [ref=f5e269]:
+                - generic [ref=f5e270]:
+                  - strong [ref=f5e271]: Netzwerkverbindung
+                  - generic [ref=f5e272]: Netzwerk · Checkmk · Quelle OK
+                - generic [ref=f5e273]: OK
+              - generic [ref=f5e274]:
+                - generic [ref=f5e275]:
+                  - strong [ref=f5e276]: Datenbankserver (VM)
+                  - generic [ref=f5e277]: Datenbank · SCOM · Quelle OK · benötigt Virtualisierungshost Datenbank (Pflicht)
+                - generic [ref=f5e278]: OK
+              - generic [ref=f5e279]:
+                - generic [ref=f5e280]:
+                  - strong [ref=f5e281]: Virtualisierungshost Datenbank
+                  - generic [ref=f5e282]: Plattform & Storage · Checkmk · Quelle OK · benötigt Storage für Datenbank (Pflicht)
+                - generic [ref=f5e283]: OK
+              - generic [ref=f5e284]:
+                - generic [ref=f5e285]:
+                  - strong [ref=f5e286]: Storage für Datenbank
+                  - generic [ref=f5e287]: Plattform & Storage · Checkmk · Quelle OK
+                - generic [ref=f5e288]: OK
+              - generic [ref=f5e289]:
+                - generic [ref=f5e290]:
+                  - strong [ref=f5e291]: Datenbank-Backup
+                  - generic [ref=f5e292]: Betrieb & Sicherung · Checkmk · Quelle OK
+                - generic [ref=f5e293]: OK
+              - generic [ref=f5e294]:
+                - generic [ref=f5e295]:
+                  - strong [ref=f5e296]: Verzeichnisdienst / Anmeldung
+                  - generic [ref=f5e297]: Identität & Zugriff · SCOM · Quelle OK
+                - generic [ref=f5e298]: OK
+              - generic [ref=f5e299]:
+                - generic [ref=f5e300]:
+                  - strong [ref=f5e301]: Reverse-Proxy / Lastausgleich
+                  - generic [ref=f5e302]: Webzugriff · Checkmk · Quelle OK
+                - generic [ref=f5e303]: OK
+              - generic [ref=f5e304]:
+                - generic [ref=f5e305]:
+                  - strong [ref=f5e306]: TLS-Zertifikat
+                  - generic [ref=f5e307]: Webzugriff · Checkmk · Quelle OK
+                - generic [ref=f5e308]: OK
+              - generic [ref=f5e309]:
+                - generic [ref=f5e310]:
+                  - strong [ref=f5e311]: Gemeinsamer Zeitdienst
+                  - generic [ref=f5e312]: Gemeinsame Infrastruktur · Checkmk · Quelle OK
+                - generic [ref=f5e313]: OK
+          - generic [ref=f5e152]:
+            - generic [ref=f5e153]:
+              - heading "Beobachtete Verfügbarkeit" [level=3] [ref=f5e154]
+              - generic [ref=f5e314]:
+                - strong [ref=f5e315]: Nicht berechenbar
+                - text: · Abdeckung 0.0 %
+                - paragraph [ref=f5e316]:
+                  - strong [ref=f5e317]: "Zeitraum:"
+                  - text: 10.11.2026, 13:22:20 bis 10.11.2026, 13:22:20 · 1 Aufnahmen
+                - paragraph [ref=f5e318]: "Verfügbar: 0 h 0 min 0 s · Ausfall: 0 h 0 min 0 s · Unbekannt / Datenlücke: 0 h 0 min 0 s"
+                - paragraph [ref=f5e319]: Kein Ziel hinterlegt. OK und WARN zählen als verfügbar, CRIT als Ausfall. UNKNOWN und Lücken über fünf Minuten sind nicht bewertet. Dies ist eine Stichproben-Schätzung, kein SLA-Nachweis; Wartungszeiten werden nicht berücksichtigt.
+            - generic [ref=f5e162]:
+              - heading "Wiederkehrende Störungen" [level=3] [ref=f5e163]
+              - generic [ref=f5e320]:
+                - strong [ref=f5e321]: "0"
+                - text: Übergänge in WARN/CRIT erkannt
+                - paragraph [ref=f5e322]: Nur in der gewählten Datenbasis und bei bekannten Aufnahmen mit höchstens fünf Minuten Abstand. Kein Nachweis einer Ursache.
+        - article [ref=f5e168]:
+          - text: 06 · MODELLIERUNG
+          - heading "Abhängigkeiten vorschlagen" [level=2] [ref=f5e169]
+          - paragraph [ref=f5e170]: Gleiche Hostnamen liefern Hinweise, aber keinen Beweis für eine Abhängigkeit. Jede Richtung muss ausdrücklich bestätigt werden.
+          - paragraph [ref=f5e172]: Keine Vorschläge auf Basis gleicher Hostnamen gefunden.

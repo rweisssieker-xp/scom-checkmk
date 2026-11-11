@@ -1,0 +1,282 @@
+- generic [ref=f3e2]:
+  - complementary [ref=f3e3]:
+    - generic [ref=f3e4]:
+      - generic [ref=f3e5]: ⌘
+      - generic [ref=f3e6]: serviceatlas
+    - generic [ref=f3e7]: ÜBERSICHT
+    - generic [ref=f3e8]:
+      - link "◉ Gesamtübersicht" [ref=f3e9] [cursor=pointer]:
+        - /url: management.html
+        - text: ◉
+        - generic [ref=f3e10]: Gesamtübersicht
+      - link "◉ Service Intelligence" [ref=f3e11] [cursor=pointer]:
+        - /url: insights.html
+        - text: ◉
+        - generic [ref=f3e12]: Service Intelligence
+      - link "◉ Service-Map" [ref=f3e13] [cursor=pointer]:
+        - /url: service-map.html
+        - text: ◉
+        - generic [ref=f3e14]: Service-Map
+      - link "◉ Incident Radar" [ref=f3e15] [cursor=pointer]:
+        - /url: incident-radar.html
+        - text: ◉
+        - generic [ref=f3e16]: Incident Radar
+      - link "◉ Konstellation" [ref=f3e17] [cursor=pointer]:
+        - /url: service-konstellation.html
+        - text: ◉
+        - generic [ref=f3e18]: Konstellation
+      - link "◉ Schichtenansicht" [ref=f3e19] [cursor=pointer]:
+        - /url: schichtenansicht.html
+        - text: ◉
+        - generic [ref=f3e20]: Schichtenansicht
+    - button "◫ Komponenten" [ref=f3e21] [cursor=pointer]:
+      - text: ◫
+      - generic [ref=f3e22]: Komponenten
+    - generic [ref=f3e25]:
+      - strong [ref=f3e26]: Simulation & Live
+      - generic [ref=f3e27]: Quelle je Komponente
+  - main [ref=f3e28]:
+    - generic [ref=f3e29]:
+      - generic [ref=f3e30]:
+        - text: Service Monitoring /
+        - strong [ref=f3e31]: Servicebäume
+      - generic [ref=f3e32]:
+        - generic [ref=f3e33]: SERVICE ATLAS
+        - generic [ref=f3e35]: SA
+    - generic [ref=f3e36]:
+      - generic [ref=f3e37]:
+        - heading "Servicebäume" [level=1] [ref=f3e39]
+        - generic [ref=f3e40]:
+          - button "↻ Zustände zurücksetzen" [ref=f3e41] [cursor=pointer]
+          - button "↗ Live-Quellen" [ref=f3e42] [cursor=pointer]
+          - button "▣ Gemeinsamer Speicher" [ref=f3e43] [cursor=pointer]
+          - button "⇄ Demo-Schnittstellen" [ref=f3e44] [cursor=pointer]
+          - button "+ Servicebaum anlegen" [ref=f3e45] [cursor=pointer]
+      - generic [ref=f3e46]:
+        - generic [ref=f3e47]: ⓘ
+        - generic [ref=f3e48]:
+          - strong [ref=f3e49]: Simulation und optionale Live-Daten.
+          - text: Die Beispielarchitektur ist fiktiv. Live-Objekte werden gesondert hinzugefügt und gekennzeichnet.
+      - generic [ref=f3e50]:
+        - generic [ref=f3e51]:
+          - generic [ref=f3e52]: GESCHÄFTSSERVICE
+          - strong [ref=f3e53]: Einwohnerwesen – VOIS/MESO (Beispiel)
+          - generic [ref=f3e54]: Ausgewählter Servicebaum
+        - generic [ref=f3e55]:
+          - generic [ref=f3e56]: GESAMTZUSTAND
+          - strong [ref=f3e57]: OK
+          - generic [ref=f3e58]: Berechnet aus allen Bereichen
+        - generic [ref=f3e59]:
+          - generic [ref=f3e60]: KOMPONENTEN
+          - strong [ref=f3e61]:
+            - text: "17"
+            - emphasis [ref=f3e62]: Komponenten
+          - generic [ref=f3e63]: Im ausgewählten Baum
+        - generic [ref=f3e64]:
+          - generic [ref=f3e65]: DATENQUELLEN
+          - strong [ref=f3e66]: ● SCOM ● Checkmk
+          - generic [ref=f3e67]: Simulation / Live
+      - generic [ref=f3e68]:
+        - heading "Serviceübersicht" [level=2] [ref=f3e70]
+        - generic [ref=f3e71]: Simulation / Live
+      - generic [ref=f3e73]:
+        - generic [ref=f3e74]: Servicebaum
+        - combobox "Servicebaum" [ref=f3e75]:
+          - option "Kundenportal"
+          - option "Einwohnerwesen – VOIS/MESO (Beispiel)" [selected]
+          - option "Personalmanagement – P&I LogaHR (Beispiel)"
+          - option "Finanzservices – Infoma newsystem (Beispiel)"
+          - option "Dokumentenmanagement – d.velop documents (Beispiel)"
+        - button "Baum bearbeiten" [ref=f3e76] [cursor=pointer]
+        - button "Baum löschen" [ref=f3e77] [cursor=pointer]
+        - button "Komponentenkatalog" [ref=f3e78] [cursor=pointer]
+        - button "+ Komponente hinzufügen" [ref=f3e79] [cursor=pointer]
+      - generic [ref=f3e81]:
+        - generic [ref=f3e82]:
+          - generic [ref=f3e83]:
+            - heading "Servicebaum" [level=3] [ref=f3e84]
+            - paragraph [ref=f3e85]: Abhängigkeiten und Zustände als Diagramm
+          - generic [ref=f3e86]:
+            - generic [ref=f3e87]:
+              - text: Ansicht
+              - combobox "Ansicht" [ref=f3e88]:
+                - option "1 · Service-Map"
+                - option "2 · Incident Radar"
+                - option "3 · Service-Konstellation" [selected]
+                - option "4 · Schichtenansicht"
+                - option "Listenansicht"
+                - option "Knotendiagramm"
+            - button "Details anzeigen" [ref=f3e89] [cursor=pointer]
+            - button "⛶ Gesamtansicht" [ref=f3e90] [cursor=pointer]
+        - 'generic "Servicebaum: Diagramm horizontal verschieben" [ref=f3e91]':
+          - group "Service-Konstellation" [ref=f3e93]:
+            - generic [ref=f3e94]:
+              - generic [ref=f3e95]:
+                - text: SERVICE ATLAS
+                - heading "Service-Konstellation" [level=3] [ref=f3e96]
+                - paragraph [ref=f3e97]: Ein Service und seine Komponenten
+              - generic "Komponentenzustände" [ref=f3e98]:
+                - generic [ref=f3e99]: 0 CRIT
+                - generic [ref=f3e100]: 0 WARN
+                - generic [ref=f3e101]: 17 OK
+                - generic [ref=f3e102]: 0 UNKNOWN
+            - generic [ref=f3e103]: Pflichtabhängigkeiten wirken auf den Zustand; optionale Kanten nicht.
+            - generic [ref=f3e104]:
+              - generic [ref=f3e105]:
+                - strong [ref=f3e106]: Abhängigkeitspfade
+                - generic [ref=f3e107]: "Pfeil: benötigt / hängt ab von"
+              - generic [ref=f3e108]:
+                - button "Datenbankdienst demo-meso-db OK" [ref=f3e109] [cursor=pointer]:
+                  - generic [ref=f3e110]: Datenbankdienst
+                  - generic [ref=f3e111]: demo-meso-db
+                  - generic [ref=f3e112]: OK
+                - generic "Pflichtabhängigkeit" [ref=f3e113]: →
+                - button "Datenbankserver (VM) demo-meso-db-vm OK" [ref=f3e114] [cursor=pointer]:
+                  - generic [ref=f3e115]: Datenbankserver (VM)
+                  - generic [ref=f3e116]: demo-meso-db-vm
+                  - generic [ref=f3e117]: OK
+                - generic "Pflichtabhängigkeit" [ref=f3e118]: →
+                - button "Virtualisierungshost Datenbank demo-meso-hypervisor OK" [ref=f3e119] [cursor=pointer]:
+                  - generic [ref=f3e120]: Virtualisierungshost Datenbank
+                  - generic [ref=f3e121]: demo-meso-hypervisor
+                  - generic [ref=f3e122]: OK
+                - generic "Pflichtabhängigkeit" [ref=f3e123]: →
+                - button "Storage für Datenbank demo-meso-storage OK" [ref=f3e124] [cursor=pointer]:
+                  - generic [ref=f3e125]: Storage für Datenbank
+                  - generic [ref=f3e126]: demo-meso-storage
+                  - generic [ref=f3e127]: OK
+            - generic [ref=f3e128]:
+              - generic [ref=f3e130]:
+                - generic [ref=f3e131]: GESCHÄFTSSERVICE
+                - strong [ref=f3e132]: Einwohnerwesen – VOIS/MESO (Beispiel)
+                - generic [ref=f3e133]: Gesamtzustand
+                - generic [ref=f3e134]: OK
+              - generic [ref=f3e135]:
+                - generic [ref=f3e136]:
+                  - generic [ref=f3e137]:
+                    - generic [ref=f3e138]:
+                      - strong [ref=f3e139]: Webzugriff
+                      - generic [ref=f3e140]: Pflicht · 4 Komponenten
+                    - generic [ref=f3e141]: OK
+                  - generic [ref=f3e142]:
+                    - button "VOIS/MESO – Webzugriff demo-meso-web · SCOM OK" [ref=f3e143] [cursor=pointer]:
+                      - generic [ref=f3e144]: VOIS/MESO – Webzugriff
+                      - generic [ref=f3e145]: demo-meso-web · SCOM
+                      - generic [ref=f3e146]: OK
+                    - button "Windows-Anwendungsserver demo-meso-win-01 · SCOM OK" [ref=f3e147] [cursor=pointer]:
+                      - generic [ref=f3e148]: Windows-Anwendungsserver
+                      - generic [ref=f3e149]: demo-meso-win-01 · SCOM
+                      - generic [ref=f3e150]: OK
+                    - button "Reverse-Proxy / Lastausgleich demo-meso-proxy · Checkmk OK" [ref=f3e151] [cursor=pointer]:
+                      - generic [ref=f3e152]: Reverse-Proxy / Lastausgleich
+                      - generic [ref=f3e153]: demo-meso-proxy · Checkmk
+                      - generic [ref=f3e154]: OK
+                    - button "TLS-Zertifikat demo-meso-tls · Checkmk OK" [ref=f3e155] [cursor=pointer]:
+                      - generic [ref=f3e156]: TLS-Zertifikat
+                      - generic [ref=f3e157]: demo-meso-tls · Checkmk
+                      - generic [ref=f3e158]: OK
+                - generic [ref=f3e159]:
+                  - generic [ref=f3e160]:
+                    - generic [ref=f3e161]:
+                      - strong [ref=f3e162]: Anwendungsdienste
+                      - generic [ref=f3e163]: Redundant · min. 1 verfügbar · 2 Komponenten
+                    - generic [ref=f3e164]: OK
+                  - generic [ref=f3e165]:
+                    - button "Linux-Service 01 demo-meso-linux-01 · Checkmk OK" [ref=f3e166] [cursor=pointer]:
+                      - generic [ref=f3e167]: Linux-Service 01
+                      - generic [ref=f3e168]: demo-meso-linux-01 · Checkmk
+                      - generic [ref=f3e169]: OK
+                    - button "Linux-Service 02 demo-meso-linux-02 · Checkmk OK" [ref=f3e170] [cursor=pointer]:
+                      - generic [ref=f3e171]: Linux-Service 02
+                      - generic [ref=f3e172]: demo-meso-linux-02 · Checkmk
+                      - generic [ref=f3e173]: OK
+                - generic [ref=f3e174]:
+                  - generic [ref=f3e175]:
+                    - generic [ref=f3e176]:
+                      - strong [ref=f3e177]: Datenbank
+                      - generic [ref=f3e178]: Pflicht · 2 Komponenten
+                    - generic [ref=f3e179]: OK
+                  - generic [ref=f3e180]:
+                    - button "Datenbankdienst demo-meso-db · SCOM OK" [ref=f3e181] [cursor=pointer]:
+                      - generic [ref=f3e182]: Datenbankdienst
+                      - generic [ref=f3e183]: demo-meso-db · SCOM
+                      - generic [ref=f3e184]: OK
+                    - button "Datenbankserver (VM) demo-meso-db-vm · SCOM OK" [ref=f3e185] [cursor=pointer]:
+                      - generic [ref=f3e186]: Datenbankserver (VM)
+                      - generic [ref=f3e187]: demo-meso-db-vm · SCOM
+                      - generic [ref=f3e188]: OK
+                - generic [ref=f3e189]:
+                  - generic [ref=f3e190]:
+                    - generic [ref=f3e191]:
+                      - strong [ref=f3e192]: Netzwerk
+                      - generic [ref=f3e193]: Pflicht · 4 Komponenten
+                    - generic [ref=f3e194]: OK
+                  - generic [ref=f3e195]:
+                    - button "DNS-Auflösung demo-meso-dns · Checkmk OK" [ref=f3e196] [cursor=pointer]:
+                      - generic [ref=f3e197]: DNS-Auflösung
+                      - generic [ref=f3e198]: demo-meso-dns · Checkmk
+                      - generic [ref=f3e199]: OK
+                    - button "Firewall demo-meso-firewall · Checkmk OK" [ref=f3e200] [cursor=pointer]:
+                      - generic [ref=f3e201]: Firewall
+                      - generic [ref=f3e202]: demo-meso-firewall · Checkmk
+                      - generic [ref=f3e203]: OK
+                    - button "Netzwerk-Switch demo-meso-switch · Checkmk OK" [ref=f3e204] [cursor=pointer]:
+                      - generic [ref=f3e205]: Netzwerk-Switch
+                      - generic [ref=f3e206]: demo-meso-switch · Checkmk
+                      - generic [ref=f3e207]: OK
+                    - button "Netzwerkverbindung demo-meso-verbindung · Checkmk OK" [ref=f3e208] [cursor=pointer]:
+                      - generic [ref=f3e209]: Netzwerkverbindung
+                      - generic [ref=f3e210]: demo-meso-verbindung · Checkmk
+                      - generic [ref=f3e211]: OK
+                - generic [ref=f3e212]:
+                  - generic [ref=f3e213]:
+                    - generic [ref=f3e214]:
+                      - strong [ref=f3e215]: Plattform & Storage
+                      - generic [ref=f3e216]: Pflicht · 2 Komponenten
+                    - generic [ref=f3e217]: OK
+                  - generic [ref=f3e218]:
+                    - button "Virtualisierungshost Datenbank demo-meso-hypervisor · Checkmk OK" [ref=f3e219] [cursor=pointer]:
+                      - generic [ref=f3e220]: Virtualisierungshost Datenbank
+                      - generic [ref=f3e221]: demo-meso-hypervisor · Checkmk
+                      - generic [ref=f3e222]: OK
+                    - button "Storage für Datenbank demo-meso-storage · Checkmk OK" [ref=f3e223] [cursor=pointer]:
+                      - generic [ref=f3e224]: Storage für Datenbank
+                      - generic [ref=f3e225]: demo-meso-storage · Checkmk
+                      - generic [ref=f3e226]: OK
+                - generic [ref=f3e227]:
+                  - generic [ref=f3e228]:
+                    - generic [ref=f3e229]:
+                      - strong [ref=f3e230]: Betrieb & Sicherung
+                      - generic [ref=f3e231]: Pflicht · 1 Komponenten
+                    - generic [ref=f3e232]: OK
+                  - button "Datenbank-Backup demo-meso-backup · Checkmk OK" [ref=f3e234] [cursor=pointer]:
+                    - generic [ref=f3e235]: Datenbank-Backup
+                    - generic [ref=f3e236]: demo-meso-backup · Checkmk
+                    - generic [ref=f3e237]: OK
+                - generic [ref=f3e238]:
+                  - generic [ref=f3e239]:
+                    - generic [ref=f3e240]:
+                      - strong [ref=f3e241]: Identität & Zugriff
+                      - generic [ref=f3e242]: Pflicht · 1 Komponenten
+                    - generic [ref=f3e243]: OK
+                  - button "Verzeichnisdienst / Anmeldung demo-meso-auth · SCOM OK" [ref=f3e245] [cursor=pointer]:
+                    - generic [ref=f3e246]: Verzeichnisdienst / Anmeldung
+                    - generic [ref=f3e247]: demo-meso-auth · SCOM
+                    - generic [ref=f3e248]: OK
+                - generic [ref=f3e249]:
+                  - generic [ref=f3e250]:
+                    - generic [ref=f3e251]:
+                      - strong [ref=f3e252]: Gemeinsame Infrastruktur
+                      - generic [ref=f3e253]: Pflicht · 1 Komponenten
+                    - generic [ref=f3e254]: OK
+                  - button "Gemeinsamer Zeitdienst demo-owl-shared-ntp · Checkmk OK" [ref=f3e256] [cursor=pointer]:
+                    - generic [ref=f3e257]: Gemeinsamer Zeitdienst
+                    - generic [ref=f3e258]: demo-owl-shared-ntp · Checkmk
+                    - generic [ref=f3e259]: OK
+        - generic [ref=f3e260]: ⓘ Der Gesamtzustand wird aus den Komponenten berechnet.
+      - generic [ref=f3e261]:
+        - generic [ref=f3e262]: OK
+        - generic [ref=f3e264]: Warnung
+        - generic [ref=f3e266]: Kritisch
+        - generic [ref=f3e268]: Unbekannt
+        - generic [ref=f3e270]: Demo- und Live-Zustände werden lokal gespeichert.
